@@ -13,17 +13,18 @@
 </head>
 
 <body>
-    
-    <div id="app">
+    <div class="app">
+        <div id="app">
 
-        <h1>{{title}}</h1>
-
-        <ul>
-            <li v-for="flower of flower">
-                {{flower}}
-            </li>
-        </ul>
-
+            <h1>{{title}}</h1>
+            <ul>
+                <li v-for="flower of flower">
+                    {{flower.quantity}} - {{flower.name}}
+                    <span v-if="flower.quantity === 0"> - No Stock </span>
+                    <span v-if="flower.quantity === 1"> - To buy </span>
+                </li>
+            </ul>
+        </div>
     </div>
 
 

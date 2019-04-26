@@ -1,0 +1,59 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+body {
+  background: #649173;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #DBD5A4, #649173);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #DBD5A4, #649173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  margin: 0;
+  color: #444;
+}
+
+.my-blue{
+  color: #3f888f;
+}
+
+.app{
+  /*padding-top: 5%;*/
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.color-navbar{
+  color: #ffcd01 !important;
+}
+
+.title-position{
+  justify-content: center !important;
+  align-items: center !important;
+  vertical-align: middle !important;
+}
+
+.card-panel{
+  padding-left: 5% !important;
+  padding-right: 5% !important;
+}
+
+.card_title1{
+  color: blueviolet !important;
+  font-size: 50px !important;
+  font-weight: bold !important;
+}
+
+.card-margin{
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.card-text-padding{
+  padding-left: 5% !important;
+  padding-right: 5% !important:
+}
+
+.card_background{
+  color: #EEFF70; !important
+}
