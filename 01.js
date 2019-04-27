@@ -11,7 +11,8 @@ const app = new Vue({
             {name:'ble', quantity: 5},
             {name:'bli', quantity: 4},
             {name:'blo', quantity: 3},
-            {name:'Violet', quantity: 1}]
+            {name:'Violet', quantity: 1}
+        ]
     }
 
 
