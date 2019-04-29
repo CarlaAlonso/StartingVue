@@ -12,11 +12,25 @@
 
 </head>
 
-<body background= "fondo-madera.jpg">
+<body>
+    <!--background="fondo-madera.jpg"-->
+
     <div class="app">
         <div id="app">
 
             <h1>{{title}}</h1>
+
+            <!--
+            <input type="text" v-model="newQuantity">
+            <button v-on:click="addQuantity">Add</button>
+            -->
+            <!-- v-model = conexión con 01 -->
+            <input type="text" v-model="newFlower">
+            <button v-on:click="addFlower">Add</button>
+            <!--Para abreviar se puede poner solo @click o algo así-->
+
+            
+
             <ul>
                 <li v-for="flower of flower">
                     {{flower.quantity}} - {{flower.name}}
