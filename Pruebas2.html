@@ -17,27 +17,28 @@
 
     <div class="app">
         <div id="app">
-
             <h1>{{title}}</h1>
-
             <!--
-            <input type="text" v-model="newQuantity">
-            <button v-on:click="addQuantity">Add</button>
             -->
             <!-- v-model = conexión con 01 -->
-            <input type="text" v-model="newFlower">
+            <input type="text" v-model="newFlower" @keyup.enter="addFlower">
             <button v-on:click="addFlower">Add</button>
-            <!--Para abreviar se puede poner solo @click o algo así-->
-
-            
-
+            <!--Para abreviar se puede poner solo @click-->
             <ul>
                 <li v-for="flower of flower">
-                    {{flower.quantity}} - {{flower.name}}
+
+                    <input type="number" v-model.number="flower.quantity">
+
+                    <!-- {{flower.quantity}} - --> {{flower.name}}
+
+                    <button v-on:click="flower.quantity=flower.quantity+1">+</button>
                     <span v-if="flower.quantity === 0"> - No Stock </span>
                     <span v-if="flower.quantity === 1"> - To buy </span>
                 </li>
             </ul>
+
+            <h4>TOTAL: {{plusFlower}}</h4>
+
         </div>
     </div>
 
